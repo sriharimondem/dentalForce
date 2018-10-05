@@ -1,0 +1,519 @@
+/*---------------------------------General--------------------------------------------*/
+body {
+    background-color: #333;
+}
+/*---------------------------------Layout--------------------------------------------*/
+.titleImg {
+    height: 116px;
+    width: 152px;
+}
+.title {
+    width: 364px;
+}
+.subtitle {
+    color: #D7AD4D;
+}
+.top-bar, .top-bar ul{
+    background-color: #333;
+}
+select {
+    width: auto;
+}
+
+ul li a {
+    color: #D7AD4D;
+    text-decoration: none;
+}
+
+.top-bar {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.select1 {
+    Border: 1px solid #3E3E3E !important;
+    background-color: #333333;
+    color: #D7AD4D;
+    width: 240px;
+    height: 28px;
+    line-height: 11px;
+    font-size: 14px;
+}
+
+.select2 {
+    Border: 1px solid #3E3E3E !important;
+    background-color: #333333;
+    color: #D7AD4D;
+    width: 240px;
+    height: 28px;
+    line-height: 11px;
+    font-size: 14px;
+}
+
+select option {
+    color: rgb(158, 158, 158);
+}
+
+.dateLink {
+    display: inline;
+    padding-left: 20px;
+}
+
+/*---------------------------------Dashboard--------------------------------------------*/
+.hero {
+    height: 350px;
+    background-color: rgb(105, 170, 92);
+    /* border: 1px solid black; */
+    -webkit-box-shadow: 5px 7px 9px -4px black;
+    -moz-box-shadow: 5px 7px 9px -4px black;
+    box-shadow: 5px 7px 9px -4px black;
+}
+
+.lblColor {
+    color: white;
+}
+
+.spacer {
+    height: 70px;
+}
+
+#hero1 {
+    background-color: rgb(158, 30, 34);
+}
+/*---------------------------------Production--------------------------------------------*/
+body {
+    background-color: #333;
+}
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+/* .tab1 > a,.tab2 > a,.tab3 > a,.tab4 > a {
+    color: white;
+} */
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#productionTab {
+    border: 2px solid white;
+}
+.anchors {
+    display: block;
+    color: white;
+    margin-top: -1px;
+}
+/*---------------------------------Case Acceptance--------------------------------------------*/
+
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+/* .tab1 > a,.tab2 > a,.tab3 > a,.tab4 > a {
+    color: white;
+} */
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#caseTab {
+    border: 2px solid white;
+}
+.anchors {
+    display: block;
+    color: white;
+    margin-top: -1px;
+}
+
+/*---------------------------------Utilization--------------------------------------------*/
+
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+/* .tab1 > a,.tab2 > a,.tab3 > a,.tab4 > a {
+    color: white;
+} */
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#utilTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------Same Day Treatment--------------------------------------------*/
+
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#treatmentTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------Collection percentage--------------------------------------------*/
+
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#percentageTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------AR Summary--------------------------------------------*/
+
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#summaryTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------Adjustments section--------------------------------------------*/
+
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#adjustmentsTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------Hygiene Production--------------------------------------------*/
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+/* .tab1 > a,.tab2 > a,.tab3 > a,.tab4 > a {
+    color: white;
+} */
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#productionTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------Recall Rate--------------------------------------------*/
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+/* .tab1 > a,.tab2 > a,.tab3 > a,.tab4 > a {
+    color: white;
+} */
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#recallTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------Retention Rate--------------------------------------------*/
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+/* .tab1 > a,.tab2 > a,.tab3 > a,.tab4 > a {
+    color: white;
+} */
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#retentionTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------Perio Rate--------------------------------------------*/
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+/* .tab1 > a,.tab2 > a,.tab3 > a,.tab4 > a {
+    color: white;
+} */
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#perioTab {
+    border: 2px solid white;
+}
+/*---------------------------------New Patients--------------------------------------------*/
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#newTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------Departed Patients--------------------------------------------*/
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#departedTab {
+    border: 2px solid white;
+}
+
+/*---------------------------------Footer--------------------------------------------*/
+.empty {
+    height: 600px;
+}
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*********************************************
+Media queries
+*********************************************/
+
+@media only screen and (max-width : 640px) {
+    .nav-desktop {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+    }
+}
+@media only screen and (max-width : 1380px) {
+    .dateLink {
+        display: block;
+    }
+}
+
+@media only screen and (max-width : 1023px) {
+    .hero,.tab1,.tab2,.tab3,.tab4 {
+        margin-top: 16px;
+    }
+}

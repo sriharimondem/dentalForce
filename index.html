@@ -1,0 +1,502 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation & dental force</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  </head>
+  <body>
+     <!-----------------------------Mobile Nav bar------------------------------>
+      <div class="off-canvas-wrapper">
+          <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
+              <ul class="dropdown menu nav-mobile" data-dropdown-menu>
+                  <li class="active" id="Dashboard">
+                      <a class="" href="#">Dashboard</a>
+                  </li>
+                  <li class="" id="Production">
+                      <a class="" href="#">Production</a>
+                  </li>
+                  <li class="" id="Collections">
+                      <a class="" href="#">Collections</a>
+                  </li>
+                  <li class="" id="Utilization">
+                      <a class="" href="#">Hygiene</a>
+                  </li>
+                  <li class="" id="Attrition">
+                      <a class="" href="#">Patients</a>
+                  </li>
+              </ul>
+              <div class="top-bar-right cell small-12 medium-6">
+                  <select>
+                          <option value="husker">Husker</option>
+                          <option value="starbuck">Starbuck</option>
+                          <option value="hotdog">Hot Dog</option>
+                          <option value="apollo">Apollo</option>
+                  </select>
+                  <select>
+                          <option value="husker">Husker</option>
+                          <option value="starbuck">Starbuck</option>
+                          <option value="hotdog">Hot Dog</option>
+                          <option value="apollo">Apollo</option>
+                  </select>
+                  <li class="" style="display: block;">
+                      <a class="nav-link" id="lblBucketRange" value="popover" data-backdrop="static" data-keyboard="false" style="cursor:pointer" width="20" height="20" data-toggle="modal" data-target="#myModal1" onclick="setDates()">01-10-2018 to 02-10-2018</a>
+  
+                  </li>
+              </div>
+          </div>
+          <div class="off-canvas-content" data-off-canvas-content>
+              <div class="title-bar show-for-small-only">
+                    <button class="menu-icon" type="button" data-open="mobile-menu"></button>
+              </div>
+    <!-------------------Head section------------------------------->
+    <div class="grid-x grid-padding-y">
+      <div class="cell small-6 small-offset-3 medium-7 medium-offset-3 large-5 large-offset-5 title">
+        <img src="img/img_DentalForce.jpg" alt="title image" class="titleImg cell"/>
+        <span class="subtitle cell">Simplify the way you practice</span>
+      </div>
+      <div class='cell small-2 small-offset-1 medium-1 medium-offset-1 large-1 large-offset-1 align-self-middle'>
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li><span class="fa fa-user-circle fa-lg logout" data-toggle="dropdown" style="background-color:white;border-radius:20px;border: 6px solid transparent;height: 33px;line-height: 22px;"></span>
+              <ul class="menu">
+                  <li><a href="#Item-2A">Logout</a></li>
+                  <li><a href="#Item-2B">Change password</a></li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <!-----------------------------Desktop Nav bar------------------------------>
+    <div class="grid-container fluid">
+      <div class="grid-x grid-padding-y">
+        <div class="top-bar small-12">
+            <div class="top-bar-left cell small-12 medium-6">
+              <ul class="dropdown menu nav-desktop" data-dropdown-menu>
+                  <li class="active" id="Dashboard">
+                      <a class="" href="views/dashboard.html">Dashboard</a>
+                  </li>
+                  <li class="" id="Production">
+                      <a class="" href="views/production.html">Production</a>
+                  </li>
+                  <li class="" id="Collections">
+                      <a class="" href="#">Collections</a>
+                  </li>
+                  <li class="" id="Utilization">
+                      <a class="" href="#">Hygiene</a>
+                  </li>
+                  <li class="" id="Attrition">
+                      <a class="" href="#">Patients</a>
+                  </li>
+              </ul>
+            </div>
+            <div class="top-bar-right cell small-12 medium-6 nav-desktop text-center">
+                <select class="select1">
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                </select>
+                <select class="select2">
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                </select>
+                <li class="dateLink">
+                    <a class="nav-link" id="lblBucketRange" value="popover" data-backdrop="static" data-keyboard="false" style="cursor:pointer;color: #D7AD4D;"  width="20" height="20" data-toggle="modal" data-target="#myModal1" onclick="setDates()">01-10-2018 to 02-10-2018</a>
+
+                </li>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    
+    <!-------------------------------Dashboard section----------------------------------->
+    <div class="grid-container fluid">
+      <div class="grid-x grid-margin-x">
+          <div class="cell small-12 medium-6 large-3 text-center hero">
+            <div class="spacer"></div>
+            <img class=" img-fluid" src="img/img_Production.png" style="width:80px;height:80px;">
+            <h1 @*style="color:#212529;" *@="" style="color:#ffffff" id="lblMTDProd">$17,026</h1>
+            <label style="font-size:15px;" class="lblColor">MTD Production</label>
+          </div>
+          <div class="cell small-12 medium-6 large-3 text-center hero" id="hero1">
+              <div class="spacer"></div>
+              <img class=" img-fluid" src="img/img_Collections.png" style="width:80px;height:80px;">
+              <h1 @*style="color:#212529;" *@="" style="color:#ffffff" id="lblMTDProd">$14,004</h1>
+              <label style="font-size:15px;" class="lblColor">Collections</label>
+          </div>
+          <div class="cell small-12 medium-6 large-3 text-center hero">
+              <div class="spacer"></div>
+              <img class=" img-fluid" src="img/img_Utilization.png" style="width:80px;height:80px;">
+              <h1 @*style="color:#212529;" *@="" style="color:#ffffff" id="lblMTDProd">$7,172</h1>
+              <label style="font-size:15px;" class="lblColor">Hygiene Production</label>
+          </div>
+          <div class="cell small-12 medium-6 large-3 text-center hero">
+              <div class="spacer"></div>
+              <img class=" img-fluid" src="img/img_AttritionRate.png" style="width:80px;height:80px;">
+              <h1 @*style="color:#212529;" *@="" style="color:#ffffff" id="lblMTDProd">18%</h1>
+              <label style="font-size:15px;" class="lblColor">Attrition Rate</label>
+          </div>
+      </div>
+    </div>
+    <hr/>
+    <!-------------------------------Production section--------------------------------->
+    <div class="grid-container fluid">
+      <div class="grid-x grid-margin-x">
+          <div class="cell small-12 medium-6 large-3 text-center tab1" id="productionTab">
+              <a class='anchors' href="production.html"><span class="CardValFont" id="spanProd">$9,854</span><span class="lblProdDetails">Production</span></a>
+          </div>
+          <div class="cell small-12 medium-6 large-3 text-center tab2">
+              <a class='anchors' href="caseacceptance.html"><span class="CardValFont" id="spanProd">17%</span><span class="lblProdDetails">Case Acceptance</span></a>
+          </div>
+          <div class="cell small-12 medium-6 large-3 text-center tab3">
+              <a class='anchors' href="utilizations.html"><span class="CardValFont" id="spanProd">76%</span><span class="lblProdDetails">Utilization</span></a>
+          </div>
+          <div class="cell small-12 medium-6 large-3 text-center tab4">
+              <a class='anchors' href="samedaytreatment.html"><span class="CardValFont" id="spanProd">$0</span><span class="lblProdDetails">Same Day Treatment</span></a>
+          </div>
+      </div>
+    </div>
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+          <div class="cell stat small-12 medium-12 large-3 text-center tab5">Production Content</div>
+          <div class="cell stat small-12 medium-12 large-6 text-center tab6">Production Content</div>
+          <div class="cell stat small-12 medium-12 large-3 text-center tab7">Production Content</div>
+        </div>
+      </div>
+      <hr/>
+      <!-------------------------------Case Acceptance section--------------------------------->
+      <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-3 text-center tab1">
+                <a class='anchors' href="production.html"><span class="CardValFont" id="spanProd">$9,854</span><span class="lblProdDetails">Production</span></a>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab2"  id="caseTab">
+                <a class='anchors' href="production.html"><span class="CardValFont" id="spanProd">17%</span><span class="lblProdDetails">Case Acceptance</span></a>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab3">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Utilization</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab4">
+                  <span class="CardValFont" id="spanProd">$0</span>
+                  <span class="lblProdDetails">Same Day Treatment</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+          <div class="grid-x grid-margin-x">
+            <div class="cell stat small-12 medium-12 large-3 text-center tab5">Case Acceptance Content</div>
+            <div class="cell stat small-12 medium-12 large-6 text-center tab6">Case Acceptance Content</div>
+            <div class="cell stat small-12 medium-12 large-3 text-center tab7">Case Acceptance Content</div>
+          </div>
+        </div>
+        <hr/>
+     <!-------------------------------Utilization section--------------------------------->
+     <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-3 text-center tab1">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">Production</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab2">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">Case Acceptance</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab3" id="utilTab">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Utilization</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab4">
+                  <span class="CardValFont" id="spanProd">$0</span>
+                  <span class="lblProdDetails">Same Day Treatment</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+          <div class="cell stat small-12 medium-12 large-6 text-center tab5">Utilization Content</div>
+          <div class="cell stat small-12 medium-12 large-6 text-center tab6">Utilization Content</div>
+        </div>
+      </div>
+<hr/>
+
+    <!-------------------------------Same Day Treatment section--------------------------------->
+     <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-3 text-center tab1">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">Production</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab2">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">Case Acceptance</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab3">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Utilization</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab4" id="treatmentTab">
+                  <span class="CardValFont" id="spanProd">$0</span>
+                  <span class="lblProdDetails">Same Day Treatment</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+          <div class="cell stat small-12 medium-12 large-3 text-center tab5">Same Day Treatment</div>
+          <div class="cell stat small-12 medium-12 large-3 text-center tab6">Same Day Treatment</div>
+          <div class="cell stat small-12 medium-12 large-6 text-center tab7">Same Day Treatment</div>
+        </div>
+      </div>
+    <hr/>
+    <!-------------------------------Collection percentage section--------------------------------->
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-4 text-center tab1" id="percentageTab">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">Collection percentage</span>
+            </div>
+            <div class="cell small-12 medium-6 large-4 text-center tab2">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">AR Summary</span>
+            </div>
+            <div class="cell small-12 medium-12 large-4 text-center tab3">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Adjustments</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+          <div class="cell stat small-12 medium-12 large-4 text-center tab5">Collection percentage</div>
+          <div class="cell stat small-12 medium-12 large-4 text-center tab6">Collection percentage</div>
+          <div class="cell stat small-12 medium-12 large-4 text-center tab6">Collection percentage</div>
+        </div>
+      </div>
+<hr/>
+       <!-------------------------------AR Summary section--------------------------------->
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-4 text-center tab1">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">Collection percentage</span>
+            </div>
+            <div class="cell small-12 medium-6 large-4 text-center tab2" id="summaryTab">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">AR Summary</span>
+            </div>
+            <div class="cell small-12 medium-12 large-4 text-center tab3">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Adjustments</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+          <div class="cell stat small-12 medium-12 large-4 text-center tab5">AR Summary</div>
+          <div class="cell stat small-12 medium-12 large-4 text-center tab6">AR Summary</div>
+          <div class="cell stat small-12 medium-12 large-4 text-center tab6">AR Summary</div>
+        </div>
+      </div>
+     <hr/>
+        <!-------------------------------Adjustments section--------------------------------->
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-4 text-center tab1">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">Collection percentage</span>
+            </div>
+            <div class="cell small-12 medium-6 large-4 text-center tab2">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">AR Summary</span>
+            </div>
+            <div class="cell small-12 medium-12 large-4 text-center tab3" id="adjustmentsTab">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Adjustments</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+          <div class="cell stat small-12 medium-12 large-4 text-center tab5">Adjustments</div>
+          <div class="cell stat small-12 medium-12 large-8 text-center tab6">Adjustments</div>
+        </div>
+      </div> 
+      <hr/>
+
+      <!-------------------------------Hygiene production section--------------------------------->
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-3 text-center tab1" id="productionTab">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">Production</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab2">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">Recall Rate</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab3">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Retention Rate</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab4">
+                  <span class="CardValFont" id="spanProd">$0</span>
+                  <span class="lblProdDetails">Perio Rate</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+          <div class="grid-x grid-margin-x">
+            <div class="cell stat small-12 medium-12 large-3 text-center tab5">Production Content</div>
+            <div class="cell stat small-12 medium-12 large-6 text-center tab6">Production Content</div>
+            <div class="cell stat small-12 medium-12 large-3 text-center tab7">Production Content</div>
+          </div>
+        </div>
+      <hr/>
+       <!-------------------------------Recall section--------------------------------->
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-3 text-center tab1">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">Production</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab2" id="recallTab">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">Recall Rate</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab3">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Retention Rate</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab4">
+                  <span class="CardValFont" id="spanProd">$0</span>
+                  <span class="lblProdDetails">Perio Rate</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+          <div class="grid-x grid-margin-x">
+            <div class="cell stat small-12 medium-12 large-6 text-center tab5">Recall Rate</div>
+            <div class="cell stat small-12 medium-12 large-6 text-center tab6">Recall Rate</div>
+          </div>
+        </div>
+      <hr/>
+        <!-------------------------------Retention section--------------------------------->
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-3 text-center tab1">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">Production</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab2">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">Recall Rate</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab3" id="retentionTab">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Retention Rate</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab4">
+                  <span class="CardValFont" id="spanProd">$0</span>
+                  <span class="lblProdDetails">Perio Rate</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+          <div class="grid-x grid-margin-x">
+            <div class="cell stat small-12 medium-12 large-6 text-center tab5">Retention Rate</div>
+            <div class="cell stat small-12 medium-12 large-6 text-center tab6">Retention Rate</div>
+          </div>
+        </div>
+      <hr/>
+         <!-------------------------------Perio Rate--------------------------------->
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-3 text-center tab1">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">Production</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab2">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">Recall Rate</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab3">
+                  <span class="CardValFont" id="spanProd">76%</span>
+                  <span class="lblProdDetails">Retention Rate</span>
+            </div>
+            <div class="cell small-12 medium-6 large-3 text-center tab4" id="perioTab">
+                  <span class="CardValFont" id="spanProd">$0</span>
+                  <span class="lblProdDetails">Perio Rate</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+          <div class="grid-x grid-margin-x">
+            <div class="cell stat small-12 medium-12 large-4 text-center tab5">Perio Rate</div>
+            <div class="cell stat small-12 medium-12 large-4 text-center tab6">Perio Rate</div>
+            <div class="cell stat small-12 medium-12 large-4 text-center tab7">Perio Rate</div>
+          </div>
+        </div>
+      <hr/>
+         <!-------------------------------New Patients--------------------------------->
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-6 text-center tab1" id="newTab">
+                  <span class="CardValFont" id="spanProd">$9,854</span>
+                  <span class="lblProdDetails">New Patients</span>
+            </div>
+            <div class="cell small-12 medium-6 large-6 text-center tab2">
+                  <span class="CardValFont" id="spanProd">17%</span>
+                  <span class="lblProdDetails">Departed Patients</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+          <div class="grid-x grid-margin-x">
+            <div class="cell stat small-12 medium-12 large-12 text-center tab5">New Patients</div>
+            <div class="cell stat small-12 medium-12 large-12 text-center tab6">New Patients</div>
+          </div>
+        </div>
+      <hr/>
+          <!-------------------------------Departed Patients--------------------------------->
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-6 text-center tab1">
+                  <span class="CardValFont" id="spanProd">1</span>
+                  <span class="lblProdDetails">New Patients</span>
+            </div>
+            <div class="cell small-12 medium-6 large-6 text-center tab2" id="departedTab">
+                  <span class="CardValFont" id="spanProd">98</span>
+                  <span class="lblProdDetails">Departed Patients</span>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container fluid">
+          <div class="grid-x grid-margin-x">
+            <div class="cell stat small-12 medium-12 large-12 text-center tab5">Departed Patients</div>
+            <div class="cell stat small-12 medium-12 large-12 text-center tab6">Departed Patients</div>
+          </div>
+        </div>
+    <!-------------------------------Footer section--------------------------------->
+    <div class="empty"></div>
+    <footer class="footer" style="background-color:#333">
+      <div align="center" style="color:white">
+        Copyright © Practice Analytics 2018
+      </div>
+    </footer>
+    </div>
+  </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

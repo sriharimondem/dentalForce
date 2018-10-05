@@ -1,0 +1,35 @@
+
+.tab1,.tab2,.tab3,.tab4 {
+    background-color: rgb(158, 30, 34);
+    align-content: center;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+/* .tab1 > a,.tab2 > a,.tab3 > a,.tab4 > a {
+    color: white;
+} */
+
+.CardValFont {
+    font-size: 28px;
+}
+.lblProdDetails {
+    font-size: 16px;
+    display: block;
+}
+.tab5,.tab6,.tab7 {
+    background-color: white;
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 120px;
+}
+
+#caseTab {
+    border: 2px solid white;
+}
+.anchors {
+    display: block;
+    color: white;
+    margin-top: -1px;
+}
